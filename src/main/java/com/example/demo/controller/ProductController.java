@@ -32,7 +32,7 @@ public class ProductController {
     public ModelAndView home(){
         ModelAndView modelAndView = new ModelAndView("/product/list");
         List<Product> products = (List<Product>) productService.findAll();
-        modelAndView.addObject("product", products);
+        modelAndView.addObject("products", products);
         modelAndView.addObject("message", "Thanh cong");
         return modelAndView;
     }
